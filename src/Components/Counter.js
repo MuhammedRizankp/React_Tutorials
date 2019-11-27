@@ -8,14 +8,14 @@ class Counter extends Component {
         rzn(){    
         this.setState({
             count:this.state.count+1
-        })
-        console.log(this.state.count)
+        },()=>{console.log(this.state.count)})
+        
     }
         reset(){
             this.setState({
                 count:0
-            })
-            console.log(this.state.count)
+            },()=>{console.log(this.state.count)})
+            
         }
         
     
