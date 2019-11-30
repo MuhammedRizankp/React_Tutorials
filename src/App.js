@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Counter from './Components/Counter.js';
 import Eventbind from './Components/eventbind';
+import Tablelist from './Components/Tablelist';
 
 import If from './Components/cond_rendr.js';
 function App() {
@@ -9,8 +10,8 @@ function App() {
     <div className="App">
      {/*<Counter/>*/}
      {/*<Eventbind/>*/}
-     
-     <If/>
+     {/*<If/>*/}
+     <Tablelist/>
      
      </div>
   );
