@@ -26,6 +26,7 @@ function Tablelist() {
     
     return(
         <div>
+            <table>
             <th>Name</th>
             <th>Age</th>
             <th>Skill</th>
@@ -33,6 +34,7 @@ function Tablelist() {
             <tr>{details.map(namep => <td>{namep.person2}</td>)}</tr>
             <tr>{details.map(namep => <td>{namep.person3}</td>)}</tr>
             <tr>{details.map(namep => <td>{namep.person4}</td>)}</tr>
+            </table>
         </div>
     )
     
