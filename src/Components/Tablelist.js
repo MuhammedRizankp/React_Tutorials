@@ -26,15 +26,13 @@ function Tablelist() {
     
     return(
         <div>
-            <table>
             <th>Name</th>
             <th>Age</th>
             <th>Skill</th>
-            <tr>{details.map(namep => <td>{namep.person1}</td>)}</tr>
-            <tr>{details.map(namep => <td>{namep.person2}</td>)}</tr>
-            <tr>{details.map(namep => <td>{namep.person3}</td>)}</tr>
-            <tr>{details.map(namep => <td>{namep.person4}</td>)}</tr>
-            </table>
+            <tr>{details.map(namep => <td key={namep.person1}>{namep.person1}</td>)}</tr>
+            <tr>{details.map(namep => <td key={namep.person1}>{namep.person2}</td>)}</tr>
+            <tr>{details.map(namep => <td key={namep.person1}>{namep.person3}</td>)}</tr>
+            <tr>{details.map(namep => <td key={namep.person1}>{namep.person4}</td>)}</tr>
         </div>
     )
     
